@@ -7,16 +7,39 @@
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="font-awesome.min.css">
     <title>Document</title>
+
+    <style type="text/css">
+        button {
+            border:none;
+            cursor: pointer;
+            background-color: transparent;
+        }
+        .player {
+            width: 800px;
+            height: 600px;
+        }
+        .btn {
+            background-color: black;
+        }
+        .wrapper-video-container {
+            width: 100%;
+            height: 100%;
+        }
+        .fa {
+            color: white;
+        }
+
+    </style>
 </head>
 <body>
-    <div id="player" style="width: 800px; height: 600px; ">
-        <div class="js-video-container" style="width: 100%; height: 100%;"></div>
-        <div style="background-color: black;">
-            <button class="js-play-button" style="border: none; cursor: pointer; background-color: transparent;">
-                <i class="fa fa-play" aria-hidden="true" style="color: white;"></i>
+    <div id="player" class="player">
+        <div class="js-video-container wrapper-video-container"></div>
+        <div class="btn">
+            <button class="js-play-button">
+                <i class="fa fa-play" aria-hidden="true"></i>
             </button>
-            <button class="js-pause-button" style="border: none; cursor: pointer; background-color: transparent;">
-                <i class="fa fa-pause" aria-hidden="true" style="color: white;"></i>
+            <button class="js-pause-button">
+                <i class="fa fa-pause" aria-hidden="true"></i>
             </button>
         </div>
     </div>
