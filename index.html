@@ -25,6 +25,7 @@
             box-shadow: 0 0 15px rgba(0,0,0,2) ;
         }
         .btn {
+            display: flex;
             background-color: black;
         }
         .wrapper-video-container {
@@ -34,6 +35,9 @@
             color: white;
             font-size: 20px;
             line-height: 25px;
+        }
+        .fullscreen {
+            flex-grow: 4;
         }
 
     </style>
@@ -53,6 +57,10 @@
             </button>
             <button class="js-volume-button">
                 <i class="fa fa-volume-off" aria-hidden="true"></i>
+            </button>
+            <div class="fullscreen"></div>
+            <button class="js-fullscreen-button">
+                <i class="fa fa-expand" aria-hidden="true"></i>
             </button>
     </div>
 
