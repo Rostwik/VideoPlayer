@@ -1,6 +1,6 @@
 # Сайт с видеоплеером
 
-Проект демонстриет возможности библиотеки [Playable](https://wix.github.io/playable/)
+Проект демонстрирует возможности библиотеки [Playable](https://wix.github.io/playable/)
 Работающий сайт расположен по адресу [Player](https://rostwik.github.io/VideoPlayer/)
 
 
@@ -36,7 +36,7 @@ JS код поставляется в виде одного файла player.js
   createPlayer({elementId: 'player'});
 </script>
 ```
-# Author
+# Автор
 
 * **Rostislav** - [Rostislav](https://github.com/Rostwik)
 
