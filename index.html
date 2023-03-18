@@ -14,29 +14,29 @@
     <title>VideoPlayer</title>
 
     <style type="text/css">
-        button {
-            height: 20px;
-            width: 35px;
+        .vp-button {
+            height: 25px;
+            width: 40px;
             margin: 0 5px 10px 0;
             border:none;
             cursor: pointer;
             background-color: transparent;
         }
-        .player {
+        .vp-screen {
             display: flex;
             flex-direction: column;
             width: 800px;
             height: 600px;
             box-shadow: 0 0 15px rgba(0,0,0,2) ;
         }
-        .btn {
+        .vp-buttons-container {
             display: flex;
             background-color: black;
         }
         .wrapper-video-container {
             flex-grow: 2;
         }
-        .fa {
+        .wrapper-fa {
             color: white;
             font-size: 20px;
             line-height: 25px;
@@ -48,25 +48,26 @@
     </style>
 </head>
 <body>
-    <div id="player" class="player">
+    <div id="player" class="vp-screen">
         <div class="js-video-container wrapper-video-container"></div>
-        <div class="btn">
-            <button class="js-play-button">
-                <i class="fa fa-play" aria-hidden="true"></i>
+        <div class="vp-buttons-container">
+            <button class="js-play-button vp-button">
+                <i class="fa fa-play wrapper-fa" aria-hidden="true"></i>
             </button>
-            <button class="js-pause-button">
-                <i class="fa fa-pause" aria-hidden="true"></i>
+            <button class="js-pause-button vp-button">
+                <i class="fa fa-pause wrapper-fa" aria-hidden="true"></i>
             </button>
-            <button class="js-mute-button">
-                <i class="fa fa-volume-up" aria-hidden="true"></i>
+            <button class="js-mute-button vp-button">
+                <i class="fa fa-volume-up wrapper-fa" aria-hidden="true"></i>
             </button>
-            <button class="js-volume-button">
-                <i class="fa fa-volume-off" aria-hidden="true"></i>
+            <button class="js-volume-button vp-button">
+                <i class="fa fa-volume-off wrapper-fa" aria-hidden="true"></i>
             </button>
             <div class="fullscreen"></div>
-            <button class="js-fullscreen-button">
-                <i class="fa fa-expand" aria-hidden="true"></i>
+            <button class="js-fullscreen-button vp-button">
+                <i class="fa fa-expand wrapper-fa" aria-hidden="true"></i>
             </button>
+        </div>
     </div>
 
 
