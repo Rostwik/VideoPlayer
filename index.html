@@ -16,9 +16,9 @@
     <style type="text/css">
         .vp-button {
             height: 35px;
-            width: 35px;
+            width: 31px;
             color: white;
-            font-size: 20px;
+            font-size: 16px;
             border:none;
             cursor: pointer;
             background-color: transparent;
@@ -26,14 +26,15 @@
         .vp-screen {
             display: flex;
             flex-direction: column;
-            width: 800px;
-            height: 600px;
+            width: 648px;
+            height: 491px;
             box-shadow: 0 0 15px rgba(0,0,0,2) ;
         }
         .vp-buttons-container {
             display: flex;
             align-items: center;
             background-color: black;
+            padding: 0 3px 6px 2px;
         }
         .wrapper-video-container {
             flex-grow: 2;
@@ -41,7 +42,9 @@
         .fullscreen {
             flex-grow: 4;
         }
-
+        .wrapper-loud-button {
+            margin-left: 10px;
+        }
     </style>
 </head>
 <body>
@@ -51,7 +54,7 @@
             <button class="js-play-button vp-button">
                 <i class="fa fa-play" aria-hidden="true"></i>
             </button>
-            <button class="js-pause-button vp-button">
+            <button class="js-pause-button vp-button wrapper-loud-button">
                 <i class="fa fa-pause" aria-hidden="true"></i>
             </button>
             <button class="js-mute-button vp-button">
