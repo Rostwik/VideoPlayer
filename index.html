@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
@@ -11,6 +13,7 @@
     <meta name="msapplication-TileColor" content="#da532c">
     <meta name="theme-color" content="#ffffff">
     <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto&display=swap">
     <title>VideoPlayer</title>
 
     <style type="text/css">
@@ -39,14 +42,23 @@
         .wrapper-video-container {
             flex-grow: 2;
         }
-        .fullscreen {
+        .wrapper-viewing-progressbar {
+            flex-grow: 3;
+        }
+        .js-viewing-panel {
+            display: flex;
             flex-grow: 4;
+            color: white;
+            background: black;
+            font-size: 13px;
+            font-family: 'Roboto', sans-serif;
         }
     </style>
 </head>
 <body>
     <div id="player" class="vp-screen">
         <div class="js-video-container wrapper-video-container"></div>
+
         <div class="vp-buttons-container">
             <button class="js-play-button vp-button">
                 <i class="fa fa-play" aria-hidden="true"></i>
@@ -60,7 +72,11 @@
             <button class="js-volume-button vp-button">
                 <i class="fa fa-volume-off" aria-hidden="true"></i>
             </button>
-            <div class="fullscreen"></div>
+            <div class="js-viewing-panel">
+                <div class="js-current-time wrapper-viewing-component"></div>
+                <div class="js-progressbar wrapper-viewing-progressbar"></div>
+                <div class="js-duration wrapper-viewing-component"></div>
+            </div>
             <button class="js-fullscreen-button vp-button">
                 <i class="fa fa-expand wrapper-fa" aria-hidden="true"></i>
             </button>
