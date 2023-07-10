@@ -33,9 +33,10 @@
     margin: 7px;
     height: 4px;
     flex-grow: 3;
+    cursor: pointer;
 }
 
-.js-viewing-panel {
+.wrapper-viewing-panel {
     display: flex;
     flex-grow: 4;
     align-items: center;
@@ -55,17 +56,17 @@
     border-radius: 50%;
     box-shadow: 0 0 10px gray;
     transition-duration: 300ms;
-}
-
-.wrapper-viewing-progressbar:hover .dot {
     transition-property: all;
-    transition-duration: 300ms;
     transition-timing-function: ease-out, ease-in;
     opacity: 0;
 }
 
+.wrapper-viewing-progressbar:hover .dot {
+    opacity: 100;
+    transition-duration: 300ms;
+}
+
 .wrapper-progress-slider {
-    cursor: pointer;
     background-color: #f8104d;
     border-radius: 5px;
 }
